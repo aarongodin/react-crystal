@@ -1,0 +1,9 @@
+name: react-crystal
+version: 0.1.0
+
+authors:
+  - Aaron Godin <godinaaweb@gmail.com>
+
+crystal: 0.23.1
+
+license: MIT
