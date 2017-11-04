@@ -43,6 +43,12 @@ React.render_to_static_markup(path : String, props : PropsHash) : String
 
 Paths can be either an absolute path or relative to cwd.
 
+### Components
+
+Components must follow the same guidelines as [react-stdio](https://github.com/mjackson/react-stdio), in that they must use the commonjs2 module definition to export (`module.exports = (props) => {}`).
+
+If you're using any non-node features of ECMAScript, such as static imports/exports, you'll need to transpile and reference the transpiled version that uses the commonjs2 format.
+
 ### Config
 
 Class-instance variables on the `React` module can be used to modify how render methods behave.
