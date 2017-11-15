@@ -2,7 +2,6 @@ require "json"
 
 module React
   alias PropsHash = Hash(String, JSON::Type)
-  EMPTY_PROPS_HASH = {} of String => JSON::Type
 
   class RenderOptions
     JSON.mapping(
